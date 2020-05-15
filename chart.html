@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>My page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/libs/require/require.js" data-main="js/chart"></script>
+    <link rel="stylesheet" id="css" href="css/libs/oj/v7.2.0/alta/oj-alta-min.css">
+    </head>
+    <body>
+        <h3></h3>
+        
+        
+<!--        <oj-chart id="barChart"
+                    type="funnel" 
+                    orientation="[[orientationValue]]"
+                    stack="[[stackValue]]"
+                    data="[[dataProvider]]"
+                    animation-on-display="auto"
+                    animation-on-data-change="auto"
+                    hover-behavior="dim"
+                    style="max-width:500px;width:100%;height:350px;">
+          
+                  <template slot='itemTemplate' data-oj-as='item'>
+                      <oj-chart-item 
+                        value='[[item.data.value]]' 
+                        group-id='[[ [item.data.group] ]]' 
+                        series-id='[[item.data.series]]'> 
+                      </oj-chart-item>
+                  </template>
+              </oj-chart>-->
+
+ <h3>OJET -- Data Visualizatoin -- Demo</h3>
+        
+        <p>Food Rating</p>
+        <oj-rating-gauge value="{{foodRating}}">
+
+        </oj-rating-gauge>
+    
+        <p>Service Rating</p>
+        <oj-rating-gauge value="{{serviceRating}}" step="0.5" hover-state='{"shape": "human"}'>
+        </oj-rating-gauge>
+            
+        <p>Average Rating</p>
+        <oj-rating-gauge value="[[avgRating]]" readonly>
+        </oj-rating-gauge>
+        
+    
+    <hr>
+    
+    <div>You rated for
+        <p>Food -- <span data-bind="text: foodRating"></span></p>
+        <p>Service -- <span data-bind="text: serviceRating"></span></p>
+        <p>Average -- <span data-bind="text: avgRating"></span></p>
+    </div>
+
+    </body>
+</html>

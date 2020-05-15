@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>My page</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/libs/require/require.js" data-main="js/simpleRouter"></script>
+    <link rel="stylesheet" id="css" href="css/libs/oj/v7.2.0/alta/oj-alta-min.css">
+    </head>
+    <body>
+
+<oj-buttonset-one value="{{myrouter.stateId}}">        
+    <!-- ko foreach:myrouter.states -->       
+    <oj-option value="[[id]]">                          
+        <span data-bind="text:label"></span>         
+    </oj-option>         
+    <!-- /ko -->    
+</oj-buttonset-one> 
+<hr>
+<div data-bind="ojModule:myrouter.currentValue"></div>
+
+
+<button data-bind="click:"></button>
+    
+ </body> 
+    
+</html>

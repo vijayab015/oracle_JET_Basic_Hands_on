@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>My page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/libs/require/require.js" data-main="js/first"></script>
+    <link rel="stylesheet" id="css" href="css/libs/oj/v7.2.0/alta/oj-alta-min.css">
+    </head>
+    <body>
+    <oj-toolbar>
+        <oj-button>Home  </oj-button>
+         <oj-button> About Us</oj-button>
+          <oj-button> Contact us</oj-button>
+        
+    
+    </oj-toolbar>
+    <hr>
+    <oj-avatar role="img" aria-label="Single Placeholder Avatar"
+               title="Single Placeholder Avatar"  size="xxs">
+        
+        
+    </oj-avatar>
+    <hr>
+        
+        
+        
+        
+        
+        <h3>  Ojet Training </h3>
+        <p> Welcome to OJET Training </p>
+        <hr>
+    <oj-file-picker on-oj-select="[[selectionDone]]" selection-mode="single"></oj-file-picker>
+    <hr>
+    <p>Selected File- <span data-bind="text:selectedFiles"></span></p>
+    
+    <hr>
+    <oj-button id="btn1" on-oj-action="[[buttonClick]]"> Click ME</oj-button>
+    <hr>
+        <p> Developed by- <h4 data-bind="text:uname"></h4></p>
+<hr>
+    </body>
+</html>

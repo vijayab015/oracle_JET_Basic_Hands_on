@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>my_forms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/libs/require/require.js" data-main="js/fromElements"></script>
+    <link rel="stylesheet" id="css" href="css/libs/oj/v7.2.0/alta/oj-alta-min.css">
+    </head>
+    <body>
+        
+        <h3> Ojet form Elements Demo </h3>
+        <oj-form-layout>
+            
+            
+            
+            <oj-input-text value="{{uName}}" label-hint="UserName" required></oj-input-text>
+            
+          
+            <oj-input-password value="{{pwd}}" label-hint="Password"></oj-input-password>
+            
+          
+           
+            
+            <oj-checkboxset value="{{selectedLoc}}" label-hint="Location">
+                <oj-option value="BLR"> Bangalore </oj-option>
+                 <oj-option value="DLH"> Delhi </oj-option>
+                  <oj-option value="HYD"> Hydrabaad </oj-option>
+                   <oj-option value="BOM"> Mumbai </oj-option>
+                
+            </oj-checkboxset>
+            
+            
+            <oj-radioset value="{{gender}}" label-hint="genger">
+                
+                <oj-option value ="F">Female </oj-option>
+                <oj-option value="M" >Male </oj-option>
+            </oj-radioset>
+            
+        </oj-form-layout>
+        <hr>
+        <div>
+            <p> Your user  name is entered by you is :<span data-bind="text:uName"></span></p> 
+            <p> LOcation <span data-bind="text:selectedLoc"></span></p>
+            <p> Gender : <span data-bind="text:gender"></span></p>
+     
+    
+            
+        </div>
+    </body>
+</html>
